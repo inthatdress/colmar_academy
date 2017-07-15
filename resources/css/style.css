@@ -89,6 +89,7 @@ header li {
 .section1 {
     background-color: lightgray;
     display: flex;
+    justify-content: flex-start;
 }
 
 .section1 img {
@@ -115,7 +116,10 @@ header li {
   margin: 3rem 0;
   background-color: gray;
   height: 2rem;
+  /*
   display: block;
+  */
+
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   color: white;
@@ -130,14 +134,15 @@ header li {
 .section2 {
   background-color: darkgray;
   display: flex;
+  justify-content: flex-start;
 }
 
 .section2_feature {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   width: 60%;
-  padding: 32px 42px 32px 24px;
+  padding: 32px 24px;
 }
 
 .section2 img {
@@ -161,11 +166,10 @@ header li {
 
 .side_story_container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 26.44rem;
-  padding: 32px 24px 32px 0;
-
+  justify-content: center;
+  margin: 32px 24px 32px 16px;
+  width: 30%;
 }
 
 .side_story {
@@ -179,6 +183,8 @@ header li {
   /*
   margin: 32px 40px 32px 0;
   */
+  border: 1px solid black;
+
 }
 
 .side_story img {
@@ -195,6 +201,8 @@ header li {
   justify-content: center;
   align-content: center;
   height: 100%;
+  padding: 16px;
+  border: 1px solid black;
 }
 
 .side_story h3, p {
