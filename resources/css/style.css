@@ -89,7 +89,6 @@ header li {
 .section1 {
     background-color: lightgray;
     display: flex;
-    justify-content: center;
 }
 
 .section1 img {
@@ -129,7 +128,78 @@ header li {
 /*Section 2*/
 
 .section2 {
+  background-color: darkgray;
+  display: flex;
+}
 
+.section2_feature {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 32px 42px 32px 24px;
+}
+
+.section2 img {
+  margin-bottom: 32px;
+  display: inline;
+  float: left;
+  max-width: 100%;
+}
+
+.section2 p {
+  display: inline;
+  float: left;
+}
+
+.byline {
+  font-size: .75rem;
+  /*font-style: italic;*/
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.side_story_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 26.44rem;
+  padding: 32px 24px 32px 0;
+
+}
+
+.side_story {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+  /*
+  margin: 32px 40px 32px 0;
+  */
+}
+
+.side_story img {
+  width: 35%;
+  max-height: 100%;
+  max-width: 35%;
+  display: block;
+  margin-right: 16px;
+}
+
+.side_story_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+
+.side_story h3, p {
+  display: block;
+  clear: both;
 }
 
 /*Media Queries*/
