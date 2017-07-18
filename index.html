@@ -13,7 +13,7 @@
 
       <header>
         <div class="logo_lockup">
-          <img src="resources/images/ic-logo.svg" />
+          <img src="resources/images/ic-logo_peach.svg" />
           <h2><span style="font-weight: bold; ">COLMAR</span>ACADEMY</h2>
         </div>
         <nav class="nav">
@@ -21,18 +21,20 @@
               <li><a href="#">On Campus</a></li>
               <li><a href="#">Online</a></li>
               <li><a href="#">For Companies</a></li>
-              <li id="signin"><a href="#">Sign In</a></li>
+              <li id="signin" class="signin"><a href="#">Sign In</a></li>
             </ul>
         </nav>
         <nav class="mobile_nav">
-            <a href="#"><img src="resources/images/ic-logo.svg" /></a>
+            <a href="#"><img src="resources/images/ic-logo_peach.svg" /></a>
             <a href="#"><img src="resources/images/ic-online.svg" /></a>
             <a href="#"><img src="resources/images/ic-on-campus.svg" /></a>
             <a href="#"><img src="resources/images/ic-login.svg" /></a>
         </nav>
         </header>
 
-        <section class="section1">
+<!--  Section One -->
+
+        <section class="section_container cream_background">
           <img src="resources/images/banner.jpg" />
           <div class="section1_content">
             <h1>Learn something new everyday</h1>
@@ -41,22 +43,24 @@
           </div>
         </section>
 
-        <section class="section2">
-          <div id="displaynone" class="section2_feature">
+<!--  Section Two -->
+
+        <section class="section_container peach_background">
+          <div class="left_column mobile_none">
             <img src="resources/images/information-main.jpg" />
-            <p >Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            <p><span class="firstcharacter">&ldquo;</span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
               auctor. Sed posuere consectetur est at lobortis. Integer posuere
               erat a ante venenatis dapibus posuere velit aliquet. Maecenas
               sed diam eget risus varius blandit sit amet non magna. Nulla
-              vitae elit libero, a pharetra augue.</p>
-            <p class="byline">Emanuel, Senior Strategist at Hiring.com</p>
+              vitae elit libero, a pharetra augue.&rdquo;</p>
+            <p id="byline">Emanuel, Senior Strategist at Hiring.com</p>
           </div>
 
-            <div class="side_story_container">
+            <div class="right_column">
 
               <div class="side_story">
                 <img src="resources/images/information-orientation.jpg" />
-                <img id="mobile_img" src="resources/images/information-orientation-mobile.jpg" />
+                <img id="mobile_orientation" src="resources/images/information-orientation-mobile.jpg" />
                   <div class="side_story_content">
                     <h3>Orientation Date</h3>
                     <p>Tuesday 10/11 &amp; Wednesday 10/12<br />8AM—3PM</p>
@@ -66,7 +70,7 @@
 
               <div class="side_story">
                 <img src="resources/images/information-campus.jpg" />
-                <img id="mobile_img" src="resources/images/information-campus-mobile.jpg" />
+                <img id="mobile_campus" src="resources/images/information-campus-mobile.jpg" />
                 <div class="side_story_content">
                   <h3>Our Campus</h3>
                   <p>Find which campus is close by you</p>
@@ -76,7 +80,7 @@
 
               <div class="side_story">
                 <img src="resources/images/information-guest-lecture.jpg" />
-                <img id="mobile_img" src="resources/images/information-guest-lecture-mobile.jpg" />
+                <img id="mobile_lecture" src="resources/images/information-guest-lecture-mobile.jpg" />
                 <div class="side_story_content">
                   <h3>Our guest lecture</h3>
                   <p>Join a keynote Oliver Sack about music in medical treatment</p>
@@ -86,6 +90,8 @@
 
             </div>
         </section>
+
+<!--  Section Three -->
 
         <section class="section3">
           <h2>Start Learning</h2>
@@ -131,43 +137,46 @@
               </div>
             </div>
         </section>
-        <section class="section4">
+
+<!--  Section Four -->
+
+        <section id="section4" class="section_container peach_background">
             <h2>Thesis exhibit</h2>
             <div class="section4_body">
-              <div class="section2_feature">
-                <video src="resources/videos/thesis.mp4" autoplay="off" controls poster="posterimage.jpg" loop="">
+              <div class="left_column">
+                <video src="resources/videos/thesis.mp4" preload controls loop="">
                 </video>
-                <div class="mobile_none">
-                <h3>Reimagine urban</h3>
-                <p >Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                  <div class="mobile_none">
+                    <h3>Reimagine urban</h3>
+                    <p >Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
                   auctor. Sed posuere consectetur est at lobortis. Integer posuere
                   erat a ante venenatis dapibus posuere velit aliquet. Maecenas
                   sed diam eget risus varius blandit sit amet non magna. Nulla
-                  vitae elit libero, a pharetra augue.</p></div>
+                  vitae elit libero, a pharetra augue.</p>
+                  </div>
               </div>
-
-          <div class="side_story_container">
-            <div id="sec4_mobile"  class="side_story">
-              <img src="resources/images/thesis-fisma.jpg" />
-              <div class="side_story_content">
-                <h3>Fisma: Design and prototype</h3>
-                <p>Design showcase of new prototype products</p>
+              <div id="mobile_none" class="right_column">
+                <div  class="side_story mobile_none ">
+                  <img class="mobile_none" src="resources/images/thesis-fisma.jpg" />
+                    <div class="side_story_content mobile_none">
+                      <h3>Fisma: Design and prototype</h3>
+                      <p>Design showcase of new prototype products</p>
+                    </div>
+                </div>
+                <div class="side_story">
+                  <img class="mobile_none" src="resources/images/information-campus.jpg" />
+                    <div class="side_story_content mobile_none">
+                      <h3>Now and then</h3>
+                      <p>Research study about New York</p>
+                    </div>
+                </div>
               </div>
-            </div>
-            <div id="sec4_mobile" class="side_story">
-              <img src="resources/images/information-campus.jpg" />
-              <div class="side_story_content">
-              <h3>Now and then</h3>
-              <p>Research study about New York</p>
-            </div>
-          </div>
-        </div>
         </div>
       </section>
 
-      <footer>
+      <footer class="cream_background">
         <div><p>&copy;2016 Colmar Academy. All rights reserved.</p></div>
-        <div id="footer_nav"><p><a href="#">Terms</a></p><p><a href="#">Privacy</a></p></div>
+        <div><p><a href="#">Terms</a></p><p><a href="#">Privacy</a></p></div>
       </footer>
 
     </div>
